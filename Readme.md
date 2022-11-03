@@ -1,4 +1,4 @@
-<h1>Whiteboarding Problems</h1>
+<center><h1>Whiteboarding Problems</h1></center>
 
 
 Use your knowledge of data structures and time complexity to solve the following problems. These type of problems will not show up on the assessment but may be tested in coding interviews.
