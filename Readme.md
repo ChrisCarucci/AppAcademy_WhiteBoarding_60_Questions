@@ -70,9 +70,9 @@ Write a function maxValue(array) that returns the largest value in array. Assume
 
 Examples:
 
-maxValue([12, 6, 43, 2]);  // => 43
-maxValue([]);  // => null
-maxValue([-4, -10, 0.43]);  // => 0.43
+    maxValue([12, 6, 43, 2]);  // => 43
+    maxValue([]);  // => null
+    maxValue([-4, -10, 0.43]);  // => 0.43
 
 myIndexOf
 
@@ -82,8 +82,8 @@ CONSTRAINT: Do not use the indexOf or includes method
 
 Examples:
 
-myIndexOf([1,2,3,4],4); // => 3
-myIndexOf([5,6,7,8],2); // => -1
+    myIndexOf([1,2,3,4],4); // => 3
+    myIndexOf([5,6,7,8],2); // => -1
 
 factorArray
 
@@ -91,9 +91,9 @@ Write a function factorArray(array, number) that takes in an array of numbers an
 
 Examples:
 
-factorArray([2,3,4,5,6],20) // => [2,4,5]
-factorArray([2,3,4,5,6],35) // => [5]
-factorArray([10,15,20,25],5) // => []
+    factorArray([2,3,4,5,6],20) // => [2,4,5]
+    factorArray([2,3,4,5,6],35) // => [5]
+    factorArray([10,15,20,25],5) // => []
 
 oddRange
 
@@ -101,8 +101,8 @@ Write a function oddRange(end) that takes in a number and returns an array conta
 
 Examples:
 
-oddRange(13);  // => [ 1, 3, 5, 7, 9, 11, 13 ]
-oddRange(6);  // => [ 1, 3, 5 ]
+    oddRange(13);  // => [ 1, 3, 5, 7, 9, 11, 13 ]
+    oddRange(6);  // => [ 1, 3, 5 ]
 
 reverseHyphenString
 
@@ -110,8 +110,8 @@ Write a function reverseHyphenString(string) that takes in a hyphenated string a
 
 Examples:
 
-reverseHyphenString("Go-to-the-store") // => "store-the-to-Go"
-reverseHyphenString("Jump,-jump-for-joy") // => "joy-for-jump-Jump,"
+    reverseHyphenString("Go-to-the-store") // => "store-the-to-Go"
+    reverseHyphenString("Jump,-jump-for-joy") // => "joy-for-jump-Jump,"
 
 intersect
 
@@ -119,8 +119,8 @@ Write a function intersect(arr1, arr2) that takes in two arrays and returns a ne
 
 Examples:
 
-intersect(['a', 'b', 'c', 'd'], ['b', 'd', 'e']) // => [ 'b', 'd' ]
-intersect(['a', 'b', 'c'], ['x', 'y', 'z']) // => []
+    intersect(['a', 'b', 'c', 'd'], ['b', 'd', 'e']) // => [ 'b', 'd' ]
+    intersect(['a', 'b', 'c'], ['x', 'y', 'z']) // => []
 
 mirrorArray
 
@@ -128,10 +128,10 @@ Write a function mirrorArray(array) that takes in an array as an argument and re
 
 Examples:
 
-mirrorArray([1,2,3]);
-  // => [ 1, 2, 3, 3, 2, 1 ]
-mirrorArray(['a', 'b', 'c', 'd']);
-  // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a' ]
+    mirrorArray([1,2,3]);
+    // => [ 1, 2, 3, 3, 2, 1 ]
+    mirrorArray(['a', 'b', 'c', 'd']);
+    // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a' ]
 
 abbreviate
 
@@ -139,10 +139,10 @@ Write a function abbreviate(sentence) that takes in a sentence string and return
 
 Examples:
 
-abbreviate('the bootcamp is fun'); // => 'the btcmp is fun'
-abbreviate('programming is fantastic'); // => 'prgrmmng is fntstc'
-abbreviate('hello world'); // => 'hll wrld'
-abbreviate('how are you'); // => 'how are you'
+    abbreviate('the bootcamp is fun'); // => 'the btcmp is fun'
+    abbreviate('programming is fantastic'); // => 'prgrmmng is fntstc'
+    abbreviate('hello world'); // => 'hll wrld'
+    abbreviate('how are you'); // => 'how are you'
 
 adults
 
@@ -150,38 +150,38 @@ Write a function adults(people) that takes in an array of person objects. The fu
 
 Example:
 
-const ppl = [
-  {name: 'John', age: 20},
-  {name: 'Jim', age: 13},
-  {name: 'Jane', age: 18},
-  {name: 'Bob', age: 7}
-];
+    const ppl = [
+    {name: 'John', age: 20},
+    {name: 'Jim', age: 13},
+    {name: 'Jane', age: 18},
+    {name: 'Bob', age: 7}
+    ];
 
-adults(ppl); // => [ 'John', 'Jane' ]
+    adults(ppl); // => [ 'John', 'Jane' ]
 
 countScores
 
 Write a function countScores(people) that takes in an array of score objects, people, as its input. A score object, people, has two key-value pairs: a name (string) and a score (number). countScores(people) should return an object that has key-value pairs where each name is a key and the value is their total score.
 
 // Example 1:
-const ppl = [
-  { name: "Anthony", score: 10 },
-  { name: "Fred", score : 10 },
-  { name: "Anthony", score: -8 },
-  { name: "Winnie", score: 12 }
-];
+    const ppl = [
+    { name: "Anthony", score: 10 },
+    { name: "Fred", score : 10 },
+    { name: "Anthony", score: -8 },
+    { name: "Winnie", score: 12 }
+    ];
 countScores(ppl); // => { Anthony: 2, Fred: 10, Winnie: 12 }
 
 // Example 2
-const peeps = [
-  { name: "Anthony", score: 2 },
-  { name: "Winnie", score: 2 },
-  { name: "Fred", score: 2 },
-  { name: "Winnie", score: 2 },
-  { name: "Fred", score: 2 },
-  { name: "Anthony", score: 2 },
-  { name: "Winnie", score: 2 }
-];
+    const peeps = [
+    { name: "Anthony", score: 2 },
+    { name: "Winnie", score: 2 },
+    { name: "Fred", score: 2 },
+    { name: "Winnie", score: 2 },
+    { name: "Fred", score: 2 },
+    { name: "Anthony", score: 2 },
+    { name: "Winnie", score: 2 }
+    ];
 
 countScores(peeps); // => { Anthony: 4, Fred: 4, Winnie: 6 }
 
@@ -191,9 +191,9 @@ Using the isPrime function you made, write a function firstNPrimes(n) that retur
 
 Examples:
 
-firstNPrimes(0);  // => []
-firstNPrimes(1);  // => [2]
-firstNPrimes(4);  // => [2, 3, 5, 7]
+    firstNPrimes(0);  // => []
+    firstNPrimes(1);  // => [2]
+    firstNPrimes(4);  // => [2, 3, 5, 7]
 
 peakFinder
 
@@ -201,9 +201,9 @@ Write a function peakFinder(array) that takes in an array of numbers. It should 
 
 Examples:
 
-peakFinder([1, 2, 3, 2, 1]); // => [2]
-peakFinder([2, 1, 2, 3, 4, 5]); // => [0, 5]
-peakFinder([4, 6, 9, 4, 2, -7, 2, -4, 5]); // => [2, 6, 8]
+    peakFinder([1, 2, 3, 2, 1]); // => [2]
+    peakFinder([2, 1, 2, 3, 4, 5]); // => [0, 5]
+    peakFinder([4, 6, 9, 4, 2, -7, 2, -4, 5]); // => [2, 6, 8]
 
 divisibleByThreePairSum
 
@@ -211,11 +211,11 @@ Write a function divisibleByThreePairSum(array) that takes an array of numbers. 
 
 Examples:
 
-const arr1 = divisibleByThreePairSum([1, 6, 3, 4, 2, 0]);
-arr1 // => [[0, 4], [1, 2], [1, 5], [2, 5], [3, 4]]
+    const arr1 = divisibleByThreePairSum([1, 6, 3, 4, 2, 0]);
+    arr1 // => [[0, 4], [1, 2], [1, 5], [2, 5], [3, 4]]
 
-const arr2 = divisibleByThreePairSum([8, 3, 5, 9, 2]);
-arr2 // => [[1, 3]]
+    const arr2 = divisibleByThreePairSum([8, 3, 5, 9, 2]);
+    arr2 // => [[1, 3]]
 
 zipArray
 
@@ -223,28 +223,28 @@ Write a function zipArray(arr1, arr2) that takes in two arrays and "zips" them t
 
 Examples:
 
-const a1 = ['a', 'b', 'c', 'd'];
-const a2 = [10, 20, 30, 40];
+    const a1 = ['a', 'b', 'c', 'd'];
+    const a2 = [10, 20, 30, 40];
 
-const result = zipArray(a1, a2);
-result; // => [ [ 'a', 10 ], [ 'b', 20 ], [ 'c', 30 ], [ 'd', 40 ] ]
+    const result = zipArray(a1, a2);
+    result; // => [ [ 'a', 10 ], [ 'b', 20 ], [ 'c', 30 ], [ 'd', 40 ] ]
 
 twoDimensionalTotal
 
 Write a function twoDimensionalTotal(array) that takes in a 2D array of numbers and returns the total sum of all elements. Examples:
 
-const arr1 = [
-  [5, 2, 5, 3],
-  [12, 13],
-];
+    const arr1 = [
+    [5, 2, 5, 3],
+    [12, 13],
+    ];
 
 twoDimensionalTotal(arr1);  // => 40
 
-const arr2 = [
-  [2],
-  [1, 9],
-  [1, 1, 1]
-]
+    const arr2 = [
+     [2],
+    [1, 9],
+    [1, 1, 1]
+    ]
 
 twoDimensionalTotal(arr2);  // => 15
 
@@ -254,11 +254,11 @@ Write a function countInnerElement(arr) that takes in a 2-D array of elements. E
 
 Examples:
 
-const arr1 = [
-  [1, 2, 4, 5],
-  [2, 7, 4],
-  [1, 4, 5, 2, 7]
-]
+    const arr1 = [
+    [1, 2, 4, 5],
+    [2, 7, 4],
+    [1, 4, 5, 2, 7]
+    ]
 
 countInnerElement(arr1)  // => {1: 2, 2: 3, 4: 3, 5: 2, 7: 2}
 
