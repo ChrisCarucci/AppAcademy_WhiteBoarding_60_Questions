@@ -1269,20 +1269,21 @@ threeUniqueVowels('bootcamp');  // => false
 //The function should return a new sentence, where every vowel is replaced with the next vowel in the alphabet.
 console.log("******************************")
 
-function vowelShift(sentence) {
 const VOWELS = ['a', 'e', 'i', 'o', 'u'];
 
-for (let i = 0; i < sentence.length; i++) {
-    if (VOWELS.includes(sentence[i])) {
+const isVowel = char => VOWELS.includes(char);
 
-        sentence = sentence.slice(0,i) + sentence.slice(i+1)
-    }
+const nextVowel = char => {
+	const currentIndex = VOWELS.indexOf(char);
+	const nextIndex = currentIndex < 4 ? currentIndex + 1 : 0;
+	return VOWELS[nextIndex];
 }
-console.log(sentence)
-return sentence;
 
-
-};
+const vowelShift = sentence  => {
+	const shifted = sentence.split('').map(letter => isVowel(letter) ? nextVowel(letter): letter).join('')
+	console.log(shifted);
+	return shifted;
+}
 
 //Tests:
 
