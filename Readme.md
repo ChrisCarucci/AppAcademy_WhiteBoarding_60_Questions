@@ -260,15 +260,16 @@ Examples:
     [1, 4, 5, 2, 7]
     ]
 
-countInnerElement(arr1)  // => {1: 2, 2: 3, 4: 3, 5: 2, 7: 2}
+    countInnerElement(arr1)  // => {1: 2, 2: 3, 4: 3, 5: 2, 7: 2}
 
-const arr2 = [
-  ['a','b','c','d'],
-  ['a','b'],
-  ['a','c','d','a']
-]
 
-countInnerElement(arr2)  // => {a: 4, b: 2, c: 2, d: 2}
+    const arr2 = [
+    ['a','b','c','d'],
+    ['a','b'],
+    ['a','c','d','a']
+    ]
+
+    countInnerElement(arr2)  // => {a: 4, b: 2, c: 2, d: 2}
 
 twoDiff
 
@@ -279,9 +280,9 @@ NOTE: The pairs are unique. HINT: Account for negative difference too!
 Examples:
 
 
-twoDiff([2, 3, 4, 6, 1, 7])  // => [[0, 2], [1, 4], [2, 3]]
-twoDiff([0, 2, 4, 3, 5])  // => [[0, 1], [1, 2], [3,4]]
-twoDiff([])  // => []
+    twoDiff([2, 3, 4, 6, 1, 7])  // => [[0, 2], [1, 4], [2, 3]]
+    twoDiff([0, 2, 4, 3, 5])  // => [[0, 1], [1, 2], [3,4]]
+    twoDiff([])  // => []
 
 arrayDiff
 
@@ -291,13 +292,13 @@ Note: Assume both arrays have unique elements.
 
 Examples:
 
-const array1 = [1, 23, 2, 43, 3, 4]
-const array2 = [3, 23]
-arrayDiff(array1, array2)  // => [1, 2, 43 ,4]
+    const array1 = [1, 23, 2, 43, 3, 4]
+    const array2 = [3, 23]
+    arrayDiff(array1, array2)  // => [1, 2, 43 ,4]
 
-const array3 = ['a', 'ab', 'c', 'd', 'c']
-const array4 = ['d']
-arrayDiff(array3, array4)  // => ['a', 'ab', 'c', 'c']
+    const array3 = ['a', 'ab', 'c', 'd', 'c']
+    const array4 = ['d']
+    arrayDiff(array3, array4)  // => ['a', 'ab', 'c', 'c']
 
 valueCounter
 
@@ -305,14 +306,14 @@ Write a function valueCounter(obj, val) that takes in an object and a value, the
 
 Examples:
 
-const obj1 = { 1: 'Anne', 2: 'Alvin', 3: 'Anne', 4: 'Anne' }
-valueCounter(obj1, 'Anne')  // => 3
+    const obj1 = { 1: 'Anne', 2: 'Alvin', 3: 'Anne', 4: 'Anne' }
+    valueCounter(obj1, 'Anne')  // => 3
 
-const obj2 = { Anne: 50, Alvin: 1, JJ: 100, Roman: 100 }
-valueCounter(obj2, 88)  // => 0
+    const obj2 = { Anne: 50, Alvin: 1, JJ: 100, Roman: 100 }
+    valueCounter(obj2, 88)  // => 0
 
-const pairs = { Anne: 'Roman', Alvin: 'Roman', JJ: 'Anne', Roman: 'Anne' }
-valueCounter(pairs, 'Roman')  // => 2
+    const pairs = { Anne: 'Roman', Alvin: 'Roman', JJ: 'Anne', Roman: 'Anne' }
+    valueCounter(pairs, 'Roman')  // => 2
 
 elementCount
 
@@ -320,8 +321,8 @@ Write a function elementCount(array) that returns a object. Each key corresponds
 
 Example:
 
-elementCount(["a", "a", "b", "b"]); // => { "a" : 2, "b" : 2 }
-elementCount(['c', 'a', 'c', 'a', 'b']); // => { "c": 2, "a": 2, "b": 1 }
+    elementCount(["a", "a", "b", "b"]); // => { "a" : 2, "b" : 2 }
+    elementCount(['c', 'a', 'c', 'a', 'b']); // => { "c": 2, "a": 2, "b": 1 }
 
 nextTwoPrimes
 
@@ -329,12 +330,12 @@ Write a function nextTwoPrimes(num) that takes in a number num and returns the n
 
 Examples:
 
-nextTwoPrimes(2);  // => [ 3, 5 ]
-nextTwoPrimes(3);  // => [ 5, 7 ]
-nextTwoPrimes(7);  // => [ 11, 13 ]
-nextTwoPrimes(8);  // => [ 11, 13 ]
-nextTwoPrimes(20);  // => [ 23, 29 ]
-nextTwoPrimes(97);  // => [ 101, 103 ]
+    nextTwoPrimes(2);  // => [ 3, 5 ]
+    nextTwoPrimes(3);  // => [ 5, 7 ]
+    nextTwoPrimes(7);  // => [ 11, 13 ]
+    nextTwoPrimes(8);  // => [ 11, 13 ]
+    nextTwoPrimes(20);  // => [ 23, 29 ]
+    nextTwoPrimes(97);  // => [ 101, 103 ]
 
 pairProduct
 
@@ -344,9 +345,9 @@ CONSTRAINT: Use only while loops. No for loops.
 
 Examples:
 
-pairProduct([1, 2, 3, 4, 5], 4); // => [ [ 0, 3 ] ]
-pairProduct([1, 2, 3, 4, 5], 8); // => [ [ 1, 3 ] ]
-pairProduct([1, 2, 3, 12, 8], 24); // => [ [ 1, 3 ], [ 2, 4 ] ]
+    pairProduct([1, 2, 3, 4, 5], 4); // => [ [ 0, 3 ] ]
+    pairProduct([1, 2, 3, 4, 5], 8); // => [ [ 1, 3 ] ]
+    pairProduct([1, 2, 3, 12, 8], 24); // => [ [ 1, 3 ], [ 2, 4 ] ]
 
 twoDimensionalSize
 
@@ -354,18 +355,18 @@ Write a function twoDimensionalSize(array) that takes in a 2D-array as an argume
 
 Examples:
 
-const arr1 = [
-  [1, 2, 3],
-  [4, 5],
-  [6, 7, 8, 9]
-];
-twoDimensionalSize(arr1);  // => 9
+    const arr1 = [
+     [1, 2, 3],
+    [4, 5],
+    [6, 7, 8, 9]
+    ];
+    twoDimensionalSize(arr1);  // => 9
 
-const arr2 = [
-  ['a'],
-  ['b', 'c', 'd', 'e']
-];
-twoDimensionalSize(arr2);  // => 5
+    const arr2 = [
+    ['a'],
+    ['b', 'c', 'd', 'e']
+    ];
+    twoDimensionalSize(arr2);  // => 5
 
 longWordCount
 
@@ -373,12 +374,12 @@ Write a function longWordCount(string) that takes in a string and returns the nu
 
 Examples:
 
-longWordCount("");  // => 0
-longWordCount("short words only");  // => 0
-longWordCount("one reallylong word");  // => 1
-longWordCount("two reallylong words inthisstring");  // => 2
-longWordCount("allwordword longwordword wordswordword");  // => 3
-longWordCount("seventy schfifty five");  // => 1
+    longWordCount("");  // => 0
+    longWordCount("short words only");  // => 0
+    longWordCount("one reallylong word");  // => 1
+    longWordCount("two reallylong words inthisstring");  // => 2
+    longWordCount("allwordword longwordword wordswordword");  // => 3
+    longWordCount("seventy schfifty five");  // => 1
 
 factorial
 
@@ -386,10 +387,10 @@ Write a function factorial(n), that returns the factorial of the number n. For e
 
 Examples:
 
-factorial(1);  // => 1
-factorial(4);  // => 24
-factorial(5);  // => 120
-factorial(10);  // => 3628800
+    factorial(1);  // => 1
+    factorial(4);  // => 24
+    factorial(5);  // => 120
+    factorial(10);  // => 3628800
 
 lcm
 
@@ -397,9 +398,9 @@ Write a function lcm(num1, num2) that returns the lowest number which is a multi
 
 Examples:
 
-lcm(2, 3);  // => 6
-lcm(6, 10);  // => 30
-lcm(24, 26);  // => 312
+    lcm(2, 3);  // => 6
+    lcm(6, 10);  // => 30
+    lcm(24, 26);  // => 312
 
 hipsterfyWord
 
@@ -407,10 +408,10 @@ Write a function hipsterfyWord(word) that takes takes in a string and returns th
 
 Examples:
 
-hipsterfyWord('proper') // => 'propr'
-hipsterfyWord('tonic') // => 'tonc'
-hipsterfyWord('PANTHER') // => 'PANTHR'
-hipsterfyWord('BACKWARDS') // => 'BACKWRDS'
+    hipsterfyWord('proper') // => 'propr'
+    hipsterfyWord('tonic') // => 'tonc'
+    hipsterfyWord('PANTHER') // => 'PANTHR'
+    hipsterfyWord('BACKWARDS') // => 'BACKWRDS'
 
 hipsterfy
 
@@ -418,11 +419,11 @@ Write a function hipsterfy(sentence) that takes takes a string containing severa
 
 Examples:
 
-hipsterfy("proper");  // => "propr"
-hipsterfy("proper tonic panther");  // => "propr tonc panthr"
-hipsterfy("towel flicker banana");  // => "towl flickr banan"
-hipsterfy("runner anaconda");  // => "runnr anacond"
-hipsterfy("turtle cheeseburger fries");  // => "turtl cheeseburgr fris"
+    hipsterfy("proper");  // => "propr"
+    hipsterfy("proper tonic panther");  // => "propr tonc panthr"
+    hipsterfy("towel flicker banana");  // => "towl flickr banan"
+    hipsterfy("runner anaconda");  // => "runnr anacond"
+    hipsterfy("turtle cheeseburger fries");  // => "turtl cheeseburgr fris"
 
 objectToString
 
@@ -430,8 +431,8 @@ Write a function objectToString(count) that takes in a char count object and ret
 
 Examples:
 
-objectToString({ a : 2, b: 4, c: 1 }) // => 'aabbbbc'
-objectToString({ b: 1, o: 2, t: 1 }) // => 'boot'
+    objectToString({ a : 2, b: 4, c: 1 }) // => 'aabbbbc'
+    objectToString({ b: 1, o: 2, t: 1 }) // => 'boot'
 
 shortestWord
 
@@ -439,8 +440,8 @@ Write a function shortestWord(sentence) that returns the shortest word of a sent
 
 Examples:
 
-shortestWord('app academy is cool') // => 'is'
-shortestWord('programming bootcamp') // => 'bootcamp'
+    shortestWord('app academy is cool') // => 'is'
+    shortestWord('programming bootcamp') // => 'bootcamp'
 
 greatestCommonFactor
 
@@ -448,9 +449,9 @@ Write a function greatestCommonFactor(num1, num2) that returns the largest numbe
 
 Examples:
 
-greatestCommonFactor(15, 25) // => 5
-greatestCommonFactor(16, 24) // => 8
-greatestCommonFactor(7, 11) // => 1
+    greatestCommonFactor(15, 25) // => 5
+    greatestCommonFactor(16, 24) // => 8
+    greatestCommonFactor(7, 11) // => 1
 
 isPassing
 
@@ -458,20 +459,20 @@ Write a function isPassing(assessments) that takes in an array of assessment obj
 
 Examples:
 
-const assessments1 = [
-  { number: 1, score: 60 },
-  { number: 2, score: 90 },
-  { number: 3, score: 80 },
-  { number: 4, score: 100 },
-  { number: 5, score: 85 }
-];
+    const assessments1 = [
+    { number: 1, score: 60 },
+    { number: 2, score: 90 },
+    { number: 3, score: 80 },
+    { number: 4, score: 100 },
+    { number: 5, score: 85 }
+    ];
 
 isPassing(assessments1) // => true
-const assessments2 = [
-  { number: 1, score: 60 },
-  { number: 2, score: 20 },
-  { number: 3, score: 45 }
-];
+    const assessments2 = [
+    { number: 1, score: 60 },
+    { number: 2, score: 20 },
+    { number: 3, score: 45 }
+    ];
 
 isPassing(assessments2) // => false
 
@@ -481,11 +482,11 @@ Write a function valueConcat(array, obj) that takes in an array and object The f
 
 Examples:
 
-const arr = ['alex', 'maurice', 'meagan', 'ali'];
-const obj = { alex: 'bronca', ali: 'harris' }
-valueConcat(arr, obj) // => [ 'alexbronca', 'maurice', 'meagan', 'aliharris' ]
+    const arr = ['alex', 'maurice', 'meagan', 'ali'];
+    const obj = { alex: 'bronca', ali: 'harris' }
+    valueConcat(arr, obj) // => [ 'alexbronca', 'maurice', 'meagan', 'aliharris' ]
 
-valueConcat(['a', 'b', 'c'], { b: 2, c: 3 }) // => [ 'a', 'b2', 'c3' ]
+    valueConcat(['a', 'b', 'c'], { b: 2, c: 3 }) // => [ 'a', 'b2', 'c3' ]
 
 threeInARow
 
@@ -493,8 +494,8 @@ Write a function threeInARow(arr) that takes in an array of numbers and returns 
 
 Examples:
 
-threeInARow([4, 3, 7, 7, 7, 13, 8]);  // => true;
-threeInARow([10, 9, 20, 33, 3, 3]);  // => false;
+    threeInARow([4, 3, 7, 7, 7, 13, 8]);  // => true;
+    threeInARow([10, 9, 20, 33, 3, 3]);  // => false;
 
 variableNameify
 
@@ -502,9 +503,9 @@ Write a function variableNameify(words) that takes in an array of words. The fun
 
 Examples:
 
-variableNameify(['is', 'prime']) // => 'isPrime'
-variableNameify(['remove', 'last', 'vowel']) // => 'removeLastVowel'
-variableNameify(['MaX', 'VALUE']) // => 'maxValue'
+    variableNameify(['is', 'prime']) // => 'isPrime'
+    variableNameify(['remove', 'last', 'vowel']) // => 'removeLastVowel'
+    variableNameify(['MaX', 'VALUE']) // => 'maxValue'
 
 threeIncreasing
 
@@ -512,8 +513,8 @@ Write a function threeIncreasing(arr) that takes in an array of numbers and retu
 
 Examples:
 
-threeIncreasing([3, 2, 11, 12, 13, 2, 4]);  // => true
-threeIncreasing([7, 2, 4, 5, 2, 1, 6]);  // => false
+    threeIncreasing([3, 2, 11, 12, 13, 2, 4]);  // => true
+    threeIncreasing([7, 2, 4, 5, 2, 1, 6]);  // => false
 
 reverse2D
 
